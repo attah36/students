@@ -1,14 +1,12 @@
 // ---------- STUDENT DATA ----------
     const students = [
-      { name: "John Doe", field: "Web Developer", age: 12, img: "https://randomuser.me/api/portraits/men/32.jpg", link: "https://john-doe-tech.netlify.app" },
-      { name: "Jane Smith", field: "Data Scientist", age: 12, img: "https://randomuser.me/api/portraits/women/44.jpg", link: "https://janesmith-ai.vercel.app" },
-      { name: "Michael Brown", field: "Mobile Developer", age: 12, img: "https://randomuser.me/api/portraits/men/22.jpg", link: "https://michaelapps.netlify.app" },
-      { name: "Emily Johnson", field: "UI/UX Designer", age: 12, img: "https://randomuser.me/api/portraits/women/56.jpg", link: "https://emilyjohnson-design.vercel.app" },
-      { name: "David Wilson", field: "Machine Learning Engineer", age: 12, img: "https://randomuser.me/api/portraits/men/18.jpg", link: "https://davidwilson-ml.netlify.app" },
-      { name: "Sophia Martinez", field: "Cybersecurity Specialist", age: 12, img: "https://randomuser.me/api/portraits/women/68.jpg", link: "https://sophiasecure.tech" },
-      { name: "Liam Anderson", field: "Full Stack Developer", age: 12, img: "https://randomuser.me/api/portraits/men/77.jpg", link: "https://liamanderson.dev" },
-      { name: "Ava Thompson", field: "Game Developer", age: 12, img: "https://randomuser.me/api/portraits/women/45.jpg", link: "https://avathompson-games.netlify.app" },
-      { name: "Akpan Oduma", field: "Cloud Engineer", age: 12, img: "assest/images/download.jpg"}
+      { name: "God'swill Uguru", field: "Full Stack Web Developer", description: "A website built for His church to promote the good news of Christ.", age: 18, img: "assest/images/godswill.jpeg", link: "https://all-bride-assembly-church.vercel.app/" },
+      { name: "Ali Pelumi", field: "Back End Developer", description: "An online exclusive boutique, were users can get the best quality clothes and shoes.", age: 18, img: "assest/images/pelumi.jpeg", link: "https://wear-fizzy.netlify.app/" },
+      { name: "Dev Tobbi", field: "Web Developer", description: "A website built for a logistic company demonstrating that even while learning our students are already making big banks with their skills.", age: 23, img: "assest/images/tobbi.jpeg", link: "https://reactlogistics.onrender.com/" },
+      { name: "Jerry Emmanuel", field: "Full Stack Developer", description: "A live weather app that displays the weather of any city in real time..", age: 18, img: "assest/images/jerry.jpeg", link: "https://getall-weather.netlify.app/" },
+      { name: "Victory Omoregie", field: "App Developer", description: "Vogg is built for simplicity and creativity. Whether you're a writer, student, or tech enthusiast, Vogg makes it easy to publish, share, and connect. Inspired by recent modern platforms, it aims to give you a professional yet friendly blogging space.", age: 21, img: "assest/images/victory.jpg", link: "https://vogg-production.up.railway.app/" },
+      { name: "Ojo Emmanuel", field: "Web Developer", description: " A personal portfolio website that show cases his skill as a web developer.", age: 25, img: "assest/images/jojo.jpg", link: "https://jojo-emmanuel-portfolio.netlify.app/" },
+      { name: "Emmanuel Attah", field: "Web Developer", description: " A personal portfolio website that show cases his skill as a web developer.", age: 23, img: "assest/images/emma.jpeg", link: "https://attahe.netlify.app/" },
     ];
 
     const studentGrid = document.getElementById("studentGrid");
@@ -27,6 +25,7 @@
             <h3>${s.name}</h3>
             <h4>${s.age} years old</h4>
             <p>${s.field}</p>
+            <p>${s.description}</p>
             <a href="${s.link}" target="_blank">Visit Website</a>
           `;
           studentGrid.appendChild(card);
